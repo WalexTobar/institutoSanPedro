@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<!--hoja de estilo de flexslider-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <style type="text/css">
+      #infoOculta{
+        display:none;
+      }
+    </style>
+    
+    <script type="text/javascript" >
+      $(function(){
+        $("#infoOculta").hide();
+        $('#Eventos').hide();
+        $('#Area').hide();
+        $("#infoAr").hide();
+        $("#txtins").hide();
+        
+      $('#inst').click(function(){
+        $('#Eventos').hide();
+        $('#Area').hide();
+        $('#infoOculta').show("slow");
+         $('#infoAr').hide();
+         $("#principal").hide();
+         $("#txtins").show("slow");
+      });
+      $('#event').click(function(){
+        $("#infoOculta").hide();
+        $('#Eventos').show("slow");
+        $('#Area').hide();
+        $('#infoAr').hide();
+        $("#principal").hide();
+        $("#txtins").hide();
+      });
+      
+       $('#area').click(function(){
+        $("#Eventos").hide();
+        $('#Area').show("slow");
+        $('#infoAr').show("slow");
+        $("#principal").hide();
+        $('#infoOculta').hide();
+        $("#txtins").hide();
+      });
+      
+      });
+      
+    </script>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body style="background:url('img/fondo.jpg') fixed no-repeat; max-width:100%;">
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-responsive" src="img/banner.jpg"></img>
+          </div>
+        </div>
+        
+
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">INTMPYS</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">
+                <span class="glyphicon glyphicon-home" aria-hidden="true">Inicio</span> 
+                </a></a></li>
+                <li><a href="src/quien.html">Quienes somos?</a></li>
+                <li><a href="src/nuevo.html">Nuevo Ingreso</a></li>
+                <li><a href="src/contac.html">Contactanos</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>mas<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="src/notice.html" class="disabled" role="button">Últimas Noticias</a></a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Selecciona</li>
+            
+                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      
+    
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          
+         <a id="inst" class="btn btn-info btn-block">Intalaciones</a>
+          <a id="event" class="btn btn-info btn-block">Eventos y noticias</a>
+          <a id="area" class="btn btn-info btn-block">Áreas de formación</a>
+         <div id="infoAr">
+          <h2 >OTRAS ÁREAS DE FORMACIÓN. <span class="text-muted">Extracurriculares.</span></h2>
+          <p class="lead">
+            <ul>
+              <li>Banda escolar.</li>
+              <li>Danza.</li>
+              <li>Programas y proyectos comunitarios junto a instituciones de la comunidad.</li>
+              <li>Tutoría académica para la PAES.</li>
+              <li>Práctica profesional en empresas con posibilidades de empleo. (Para tercer año técnico vocacional).</li>
+              <li>Deporte</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-default" href="../src/otras.html" role="button">Ver mas &raquo;</a></p>
+       </div>
+       <div id="txtins">
+         </br>
+         </br>
+         <a class="btn btn-default" href="../src/instal.html" role="button">Ver más »</a>
+       </div>
+         
+        </div>
+        <div class="col-md-8">
+          <div id="principal">
+            <div class="flexslider">
+	    <ul class="slides">
+	    
+	    	<li>
+	    		<a href="#"><img alt ="" src="photos/edu/P1040015.JPG"/></a>
+	    		<p class="flex-caption"></p>
+	    	</li>
+	    	<li>
+	    		<img alt="" src="photos/edu/P1030124.JPG" />
+                <p class="flex-caption">trabajos Manuales</p>
+	    	</li>
+	    	<li>
+	    		<img  alt="" src="photos/promo/P1040111.JPG" />
+	    		<p class="flex-caption">Graduación</p>
+	    	</li>
+	    </ul>
+	    
+	  </div>
+          </div>
+          
+           <div id="infoOculta">
+           <div class="flexslider">
+	    <ul class="slides">
+	    
+	    	<li>
+	    		<a href="#"><img alt ="" src="photos/instal/P1040278.JPG"/></a>
+	    		<p class="flex-caption">Plaza</p>
+	    	</li>
+	    	<li>
+	    		<img alt="" src="photos/instal/P1040285.JPG" />
+                <p class="flex-caption">Espacio Recreativo</p>
+	    	</li>
+	    	<li>
+	    		<img  alt="" src="photos/instal/P1040280.JPG" />
+	    	</li>
+	    	
+	    	<li>
+	    		<img  alt="" src="photos/instal/P1040279.JPG" />
+	    		<p class="flex-caption">Cancha techada</p>
+	    	</li>
+	    </ul>
+	    
+	  </div>
+	  
+          </div>
+           <div id="Eventos">
+          <div class="flexslider">
+	    <ul class="slides">
+	    
+	    	
+	    	<li>
+	    		<a href="#"><img alt ="" src="photos/promo/P1040098.JPG"/></a>
+	    		<p class="flex-caption"></p>
+	    	</li>
+	    	<li>
+	    		<img alt="" src="photos/promo/P1040043.JPG" />
+                <p class="flex-caption">Misa de graduación</p>
+	    	</li>
+	    	<li>
+	    		<img  alt="" src="photos/promo/P1040111.JPG" />
+	    		<p class="flex-caption">Graduación</p>
+	    	</li>
+	    	<li>
+	    		<img  alt="" src="photos/promo/P1040121.JPG" />
+	    		<p class="flex-caption">Entrega de recuerdos</p>
+	    	</li>
+	    	<li>
+	    		<img  alt="" src="photos/promo/P1040157.JPG" />
+	    		<p class="flex-caption">Graduación</p>
+	    	</li>
+
+	    </ul>
+	    
+	  </div>
+        </div>
+           <div id="Area">
+             <div class="flexslider">
+	    <ul class="slides">
+	    
+	    	
+	    	<li>
+	    		<a href="#"><img alt ="" src="photos/extra/P1030079.JPG"/></a>
+	    		<p class="flex-caption"></p>
+	    	</li>
+	    	<li>
+	    		<img alt="" src="photos/edu/P1030172.JPG" />
+                <p class="flex-caption">trabajos Manuales</p>
+	    	</li>
+	    </ul>
+	    
+	  </div>
+           </div>
+         </div>
+      </div>
+      </div>
+    </div>
+   
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+            <!--icon-->
+           <i class="fas fa-user-graduate fa-6x"></i>
+          <h2>Áreas Académicas</h2>
+          <p>Brindamos una nueva alternativa visionaria de Educación Media.</br>
+En el 2015 contamos con:
+<ol>
+  <li>Bachillerato General  - 2 años(Con certificación en Grado Digital).</li>
+  <li>Bachillerato Técnico Vocacional  - 3 años.</li>
+  <li>Opción  Contador.</li>
+  <li>	Asistente Administrativo (Secretariado).</li>
+</ol>
+</p>
+      
+      <p><a class="btn btn-info btn-lg" href="src/AreaAca.html" role="button">Ver más &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!--icon-->
+          <i class="fas fa-user-clock fa-6x"></i>
+          <h2>Horarios</h2>
+          <p>De  lunes a  viernes de 7:30 am.  A  4:00 pm.</p>
+          
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!--icon-->
+          <i class="far fa-list-alt fa-6x"></i>
+          <h2>Requisitos de inscripción</h2>
+          <p><ul>
+            <li>Compromiso del cumplimiento del manual de convivencia institucional</li>
+            <li>Asistencia a reunión informativa el 20 de noviembre de 2013 (Padres e hijos)</li>
+          </ul></p>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+
+      <hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <strong>
+        <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span>Regresar Arriba</a></p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span>2014 Derechos Reservados Instituto Nacional Monseñor Tómas Miguel Pineda y Saldaña</p>
+        </strong>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--librerias de flexslider-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <!--script-->
+     <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html> 
+<html>  
+  <head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../img/favicon.ico">
+
+    <title>Contactanos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+       
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+  	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<style type="text/css">    #mapDiv { max-width: 47em; height: 25em; } </style> 
+  <script type="text/javascript">    
+    var map;  function initMap() {    
+     google.maps.visualRefresh = true;
+   var mapOptions = {      
+   	center: new google.maps.LatLng(13.541484977197335, -89.03744637966156),    
+   	  zoom: 18,
+      mapTypeId: google.maps.MapTypeId.HYBRID};
+    var mapElement = document.getElementById('mapDiv');
+     map = new google.maps.Map(mapElement, mapOptions);  }
+             google.maps.event.addDomListener(window, 'load',initMap);   
+   </script>
+   <!-- Custom styles for this template -->
+    <link href="../carousel.css" rel="stylesheet">
+               
+                </head>
+    <body style="background:url('../img/fondo.jpg') fixed no-repeat; max-width:100%;">
+     <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">INTMPYS</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">
+                <span class="glyphicon glyphicon-home" aria-hidden="true">Inicio</span> 
+                </a></a></li>
+                <li><a href="../src/quien.html">Quienes somos?</a></li>
+                <li><a href="../src/nuevo.html">Nuevo Ingreso</a></li>
+                <li   class="active" ><a href="../src/contac.html">Contactanos</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>mas<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="../src/notice.html" class="disabled" role="button">Últimas Noticias</a></a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Selecciona</li>
+            
+                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+     <div class="container">
+       <h2 class="featurette-heading">Mapa</br><span class="text-muted">Ubicación de la institución.</span></h2>
+                       <hr class="featurette-divider">
+                           
+                         
+   <div class="row featurette">
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Información<span class="text-muted"></span></h2>
+          <p class="lead">
+            
+Avenida Alejandro Merlos, Barrio El Calvario
+San Pedro Masahuat, Departamento La Paz.
+</br>
+El Salvador.  
+</br>Tel. 2330-2211
+</br>
+E-mail:intmpys@hotmail.com
+          </p>
+          
+        </div>
+        <div class="col-md-7">
+          <div id="mapDiv"></div>
+      </div>
+      </div>
+      <!-- /END THE FEATURETTES -->
+      <hr class="divider">
+   <footer class="footer">
+     <strong>
+        <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-chevron-up"></span>Regresar Arriba</a></p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span>2014 Derechos Reservados Instituto Nacional Monseñor Tómas Miguel Pineda y Saldaña</p>
+      </strong>
+      </footer>
+
+    </div><!-- /.container -->
+
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/docs.min.js"></script>
+    
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+   </body> 
+</html>
